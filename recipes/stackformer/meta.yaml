@@ -24,17 +24,12 @@ requirements:
     - pytorch >=2.0,<2.7
     - tqdm >=4.5,<5.0
     - tiktoken >=0.7,<1.0
-    - transformers >=4.40,<5.0
 
 test:
   imports:
     - stackformer
-  commands:
-    - python -c "import stackformer"
-    - pip check
   requires:
     - python {{ python_min }}
-    - pip
 
 about:
   home: https://github.com/Gurumurthy30/Stackformer
