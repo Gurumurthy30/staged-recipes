@@ -1,7 +1,8 @@
+{% set version = "0.1.7" %}
 
 package:
   name: stackformer
-  version: "0.1.7"
+  version: "{{ version }}"
 
 source:
   url: https://github.com/Gurumurthy30/Stackformer/archive/refs/tags/v{{ version }}.tar.gz
