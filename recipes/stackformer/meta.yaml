@@ -4,7 +4,7 @@ package:
   version: "0.1.7"
 
 source:
-  url: https://github.com/Gurumurthy30/Stackformer/archive/refs/tags/v0.1.7.tar.gz
+  url: https://github.com/Gurumurthy30/Stackformer/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 415ebe47a981e21f6b4c4ee8d840352fae954e4733b9e4288766272468ceb6c7
 
 build:
