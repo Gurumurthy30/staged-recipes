@@ -1,0 +1,44 @@
+package:
+  name: stackformer
+  version: "0.1.7"
+
+source:
+  url: https://github.com/Gurumurthy30/Stackformer/archive/refs/tags/v0.1.7.tar.gz
+  sha256: 415ebe47a981e21f6b4c4ee8d840352fae954e4733b9e4288766272468ceb6c7
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+
+requirements:
+  host:
+    - python >=3.9
+    - pip
+    - setuptools >=61
+
+  run:
+    - python >=3.9,<3.13
+    - pytorch >=2.0,<2.7
+    - tqdm >=4.5,<5.0
+    - tiktoken >=0.7,<1.0
+    - transformers >=4.40,<5.0
+
+test:
+  imports:
+    - stackformer
+
+about:
+  home: https://github.com/Gurumurthy30/Stackformer
+  license: MIT
+  license_file: LICENSE
+  summary: Modular transformer blocks built in PyTorch
+  description: |
+    Stackformer provides modular transformer building blocks and efficient
+    attention components implemented in PyTorch. It is designed for research
+    and production experimentation with modern transformer architectures,
+    focusing on performance, composability, and clarity.
+
+extra:
+  recipe-maintainers:
+    - Gurumurthy30
